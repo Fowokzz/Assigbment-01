@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+  <head>
+    <meta charset="utf-8">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="calculator.css">
+  </head>
+  <body>
+    <div class="wrapper">
+      <form name="cal">
+        <input type="text" name="display" id="display" placeholder="0" readonly>
+        <br>
+        <div class="buttons-box">
+          <input type="button" class="btn" value="7" onlick="cal.display.value +='7'">
+          <input type="button" class="btn" value="8" onlick="cal.display.value +='8'">
+          <input type="button" class="btn" value="9" onlick="cal.display.value +='9'">
+          <input type="button" class="btn mbtn" value="+" onlick="cal.display.value +='+'">
+          <br>
+          <input type="button" class="btn" value="4" onlick="cal.display.value +='4'">
+          <input type="button" class="btn" value="5" onlick="cal.display.value +='5'">
+          <input type="button" class="btn" value="6" onlick="cal.display.value +='6'">
+          <input type="button" class="btn mbtn" value="-" onlick="cal.display.value +='-'">
+          <br>
+          <input type="button" class="btn" value="1" onlick="cal.display.value +='1'">
+          <input type="button" class="btn" value="2" onlick="cal.display.value +='2'">
+          <input type="button" class="btn" value="3" onlick="cal.display.value +='3'">
+          <input type="button" class="btn mbtn" value="*" onlick="cal.display.value +='*'">
+          <br>
+          <input type="button" class="btn cbtn" value="C" onlick="cal.display.value +='C'">
+          <input type="button" class="btn" value="0" onlick="cal.display.value +='0'">
+          <input type="button" class="btn mbtn" value="/" onlick="cal.display.value +='/'">
+          <input type="button" class="btn mbtn" value="=" onlick="cal.display.value = eval(cal.display.value)">
+          <br>
+      </form>
+    </div>
+  </body>
